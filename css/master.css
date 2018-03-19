@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+#mainHeader {
+  background-color: black;
+  color: white;
+  padding: 5px; }
+
+#navButton {
+  float: left; }
+
+#kanteenLogo {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto; }
+
+#mainContainer {
+  background-color: white;
+  width: 100vw;
+  height: 100vh; }
+
+.captionBox {
+  width: 100vw;
+  text-align: center;
+  border-bottom: 1px solid black; }
+
+.caption {
+  font-size: 1em; }
+
+/*# sourceMappingURL=master.css.map */
