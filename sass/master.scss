@@ -30,12 +30,18 @@ p {
 	font-size:0.9em;
 }
 
+// HEADER
+
 #mainHeader {
 	background-color:$primaryColour;
 	color:invert($primaryColour);
 	padding:5px;
 	height:60px;
 }
+
+// END HEADER
+
+// SLIDE NAVIGATION
 
 #navButton {
 	float:left;
@@ -139,6 +145,10 @@ p {
 	width:50%;
 }
 
+// END SLIDE NAVIGATION
+
+// MAIN CONTENT
+
 #mainContainer {
 	background-color:invert($primaryColour);
 	width:100vw;
@@ -148,6 +158,8 @@ p {
 #mainImage {
 	width:100vw;
 }
+
+// FIRST SECTION
 
 #findUs .infoBox {
 	order:1;
@@ -160,6 +172,9 @@ p {
 	background-image:url("../img/kanteen_map.png");
 }
 
+// END FIRST SECTION
+
+// SECOND SECTION
 
 #menusImageLink {
 	order:1;
@@ -184,6 +199,10 @@ p {
 	text-decoration:none;
 }
 
+// END SECOND SECTION
+
+// THIRD SECTION
+
 #choImageLink {
 	order:2;
 	width:43%;
@@ -193,6 +212,10 @@ p {
 	order:1;
 	width:60%;
 }
+
+// END THIRD SECTION
+
+// FOURTH SECTION
 
 #giveawayImageLink {
 	order:1;
@@ -214,6 +237,12 @@ p {
 	display:inline-block;
 }
 
+// END FOURTH SECTION
+
+// END MAIN CONTENT
+
+// LOGO CLASSES
+
 .kanteenLogo {
 	width:fit-content;
 	height:$logoHeight;
@@ -224,9 +253,17 @@ p {
 	height:$logoHeight;
 }
 
+// END LOGO CLASSES
+
+// SLIDE NAVIGATION
+
 .slideLeftNavOpen {
 	left:0 !important;
 }
+
+// END SLIDE NAVIGATION
+
+// CAPTIONS
 
 .captionBox {
 	width:100vw;
@@ -237,6 +274,10 @@ p {
 .caption {
 	font-size:1em;
 }
+
+// END CAPTIONS
+
+// SECTIONS
 
 .infoSection {
 	display:flex;
@@ -253,14 +294,18 @@ p {
 	padding:5px 15px;
 }
 
+.infoSectionImage {
+	height:100%;
+}
+
+// END SECTIONS
+
+// OTHER
+
 .phoneNum {
 	display:block;
 	font-size:0.9em;
 	margin-top:20px;
-}
-
-.infoSectionImage {
-	height:100%;
 }
 
 .socialMediaLink {
