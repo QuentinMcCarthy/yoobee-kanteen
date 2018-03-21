@@ -5,8 +5,15 @@ $navColour:grey;
 $buttonColour:#96A6B3;
 $navItemHeight:10vh;
 $slideLeftNavWidth:90vw;
-$slideLeftNavTrans:0.5s all linear;
+$slideLeftNavTrans:0.35s all linear;
 $logoHeight:50px;
+
+// Mixins
+@mixin infoSectionDivBG($image) {
+	background-image:url($image);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
 
 
 // CSS
@@ -69,7 +76,7 @@ p {
 	color:invert($primaryColour);
 	position:fixed;
 	top:0.75vh;
-	left:-100vw;
+	// left:-100vw;
 	transform:translateX($slideLeftNavWidth - 15);
 	transition:$slideLeftNavTrans;
 }
@@ -107,7 +114,6 @@ p {
 	text-align:center;
 	position:fixed;
 	bottom:24vh;
-	left:-100vw;
 	transition:$slideLeftNavTrans;
 }
 
@@ -128,7 +134,6 @@ p {
 	min-height:160px;
 	position:fixed;
 	bottom:0;
-	left:-100vw;
 	border-top:1px solid black;
 	transition:$slideLeftNavTrans;
 }
@@ -143,6 +148,17 @@ p {
 #navMap {
 	order:2;
 	width:50%;
+}
+
+#slideLeftHotspot {
+	display:none;
+	position:fixed;
+	top:0;
+	right:0;
+	width:(100 - $slideLeftNavWidth);
+	height:100vh;
+	background-color:black;
+	opacity:0.75;
 }
 
 // END SLIDE NAVIGATION
@@ -166,10 +182,10 @@ p {
 }
 
 #findUsMap {
+	@include infoSectionDivBG("../img/kanteen_map.png");
 	order:2;
 	width:50%;
 	height:100%;
-	background-image:url("../img/kanteen_map.png");
 }
 
 // END FIRST SECTION
@@ -178,12 +194,17 @@ p {
 
 #menusImageLink {
 	order:1;
-	width:43%;
+	width:50%;
+}
+
+#menusImage {
+	@include infoSectionDivBG("../img/menusImage.jpg");
+	background-position:right top;
 }
 
 #ourMenus .infoBox {
 	order:2;
-	width:55%;
+	width:50%;
 }
 
 #viewMenu {
@@ -205,12 +226,17 @@ p {
 
 #choImageLink {
 	order:2;
-	width:43%;
+	width:50%;
+}
+
+#choImage {
+	@include infoSectionDivBG("../img/kanteen_counter.jpg");
+	background-position:center left;
 }
 
 #comeHereOften .infoBox {
 	order:1;
-	width:60%;
+	width:50%;
 }
 
 // END THIRD SECTION
@@ -219,12 +245,17 @@ p {
 
 #giveawayImageLink {
 	order:1;
-	width:43%;
+	width:50%;
+}
+
+#giveawayImage {
+	@include infoSectionDivBG("../img/giveaway.jpg");
+	background-position:center center;
 }
 
 #giveaway .infoBox {
 	order:2;
-	width:60%;
+	width:50%;
 }
 
 #giveawayFacebook {
@@ -291,7 +322,7 @@ p {
 .infoBox {
 	width:50%;
 	height:100%;
-	padding:5px 15px;
+	padding:5px 10px;
 }
 
 .infoSectionImage {
