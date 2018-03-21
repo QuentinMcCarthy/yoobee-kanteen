@@ -199,6 +199,27 @@ p {
   margin: 3px;
   display: inline-block; }
 
+#menuTabs {
+  display: flex;
+  width: 100%;
+  height: 7.5vh; }
+
+#drinksTab {
+  order: 1; }
+
+#breakfastTab {
+  order: 2; }
+
+#lunchTab {
+  order: 3; }
+
+#extras {
+  display: block;
+  width: fit-content;
+  margin: 25px auto;
+  font-size: 0.9em;
+  color: grey; }
+
 .kanteenLogo {
   width: fit-content;
   height: 50px;
@@ -233,6 +254,17 @@ p {
 
 .infoSectionImage {
   height: 100%; }
+
+.menuTabOption {
+  flex-basis: 33%;
+  text-align: center;
+  background-color: #DDD;
+  padding: 10px;
+  color: #808080; }
+
+.activeMenuOption {
+  background-color: white;
+  color: black; }
 
 .phoneNum {
   display: block;
