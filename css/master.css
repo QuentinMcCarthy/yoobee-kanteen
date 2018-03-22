@@ -224,6 +224,12 @@ noscript {
 #lunchMain li {
   height: 60px; }
 
+#contactDetails {
+  margin: 10px; }
+
+#contactDetails h2 {
+  margin-top: 20px; }
+
 .kanteenLogo {
   width: fit-content;
   height: 50px;
