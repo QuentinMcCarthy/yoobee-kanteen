@@ -37,6 +37,12 @@ p {
 	font-size:0.9em;
 }
 
+noscript {
+	display:block;
+	width:fit-content;
+	margin:25px auto 0 auto;
+}
+
 // HEADER
 
 #mainHeader {
@@ -294,14 +300,6 @@ p {
 
 // MENU
 
-#extras {
-	display:block;
-	width:fit-content;
-	margin:25px auto;
-	font-size:0.9em;
-	color:grey;
-}
-
 // END MENU
 
 // LOGO CLASSES
@@ -366,11 +364,13 @@ p {
 // MENU TABS
 
 .menuTabOption {
+	display:block;
 	flex-basis:33%;
 	text-align:center;
 	background-color:$secondaryColour;
 	padding:10px;
 	color:#808080;
+	text-decoration:none;
 }
 
 .activeMenuOption {
@@ -379,6 +379,53 @@ p {
 }
 
 // END MENU TABS
+
+// MENU CONTENT
+
+.extras {
+	display:block;
+	width:fit-content;
+	margin:25px auto;
+	font-size:0.9em;
+	color:grey;
+}
+
+.menuContent {
+	display:none;
+	width:100vw;
+}
+
+.menuList {
+	text-align:center;
+	width:100%;
+	margin-bottom:25px;
+}
+.menuList div {
+	display:flex;
+	width:80%;
+	margin:0 auto;
+}
+.menuList div ul {
+	display:block;
+	list-style:none;
+	flex-basis:50%;
+}
+.menuList div ul li {
+	padding:3px 0;
+}
+
+.itemNames {
+	text-align:left;
+}
+
+.itemPrices {
+	text-align:right;
+}
+.itemPrices li::before {
+	content:"$";
+}
+
+// END MENU CONTENT
 
 // OTHER
 
