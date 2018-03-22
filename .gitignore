@@ -1,3 +1,7 @@
+# Ignores:
 .DS_Store
-img
+img/*
 jquery*.js
+
+# Exceptions:
+!img/key

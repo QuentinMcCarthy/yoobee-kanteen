@@ -7,6 +7,7 @@ $navItemHeight:10vh;
 $slideLeftNavWidth:90vw;
 $slideLeftNavTrans:0.35s all linear;
 $logoHeight:50px;
+$menuKeyHeight:10vh;
 
 // Mixins
 @mixin infoSectionDivBG($image) {
@@ -300,6 +301,14 @@ noscript {
 
 // MENU
 
+#breakfastMain	li {
+	height:60px;
+}
+
+#lunchMain li {
+	height:60px;
+}
+
 // END MENU
 
 // LOGO CLASSES
@@ -383,10 +392,8 @@ noscript {
 // MENU CONTENT
 
 .extras {
-	display:block;
 	width:fit-content;
-	margin:25px auto;
-	font-size:0.9em;
+	margin:25px auto 0 auto;
 	color:grey;
 }
 
@@ -423,6 +430,69 @@ noscript {
 }
 .itemPrices li::before {
 	content:"$";
+}
+
+.menuKey {
+	display:flex;
+	width:100vw;
+	height:$menuKeyHeight;
+	padding:15px 10px;
+	align-content:center;
+}
+.menuKey div {
+	height:100%;
+}
+.menuKey img {
+	float:left;
+	height:100%;
+}
+.menuKey p {
+	float:left;
+	height:100%;
+	padding:12px 0;
+	font-size:0.7em;
+}
+
+.vegetarianKey {
+	flex-basis:27%;
+}
+.vegetarianKey p {
+	margin-left:-5px;
+}
+
+.veganKey {
+	flex-basis:20%;
+}
+.veganKey p {
+	margin-left:-4px;
+}
+
+.glutenFKey {
+	flex-basis:27%;
+}
+.glutenFKey p {
+	margin-left:-3px;
+}
+
+.dairyFKey {
+	flex-basis:26%;
+}
+.dairyFKey p {
+	margin-left:-5px;
+}
+
+.bfFirstItemKey {
+	position:absolute;
+	left:170px;
+	top:230px;
+	height:6vh;
+}
+
+.lFirstItemKey {
+	position:absolute;
+	left:170px;
+	top:215px;
+	height:6vh;
 }
 
 // END MENU CONTENT

@@ -218,6 +218,12 @@ noscript {
 #lunchTab {
   order: 3; }
 
+#breakfastMain li {
+  height: 60px; }
+
+#lunchMain li {
+  height: 60px; }
+
 .kanteenLogo {
   width: fit-content;
   height: 50px;
@@ -267,10 +273,8 @@ noscript {
   color: black; }
 
 .extras {
-  display: block;
   width: fit-content;
-  margin: 25px auto;
-  font-size: 0.9em;
+  margin: 25px auto 0 auto;
   color: grey; }
 
 .menuContent {
@@ -303,6 +307,62 @@ noscript {
 
 .itemPrices li::before {
   content: "$"; }
+
+.menuKey {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  padding: 15px 10px;
+  align-content: center; }
+
+.menuKey div {
+  height: 100%; }
+
+.menuKey img {
+  float: left;
+  height: 100%; }
+
+.menuKey p {
+  float: left;
+  height: 100%;
+  padding: 12px 0;
+  font-size: 0.7em; }
+
+.vegetarianKey {
+  flex-basis: 27%; }
+
+.vegetarianKey p {
+  margin-left: -5px; }
+
+.veganKey {
+  flex-basis: 20%; }
+
+.veganKey p {
+  margin-left: -4px; }
+
+.glutenFKey {
+  flex-basis: 27%; }
+
+.glutenFKey p {
+  margin-left: -3px; }
+
+.dairyFKey {
+  flex-basis: 26%; }
+
+.dairyFKey p {
+  margin-left: -5px; }
+
+.bfFirstItemKey {
+  position: absolute;
+  left: 170px;
+  top: 230px;
+  height: 6vh; }
+
+.lFirstItemKey {
+  position: absolute;
+  left: 170px;
+  top: 215px;
+  height: 6vh; }
 
 .phoneNum {
   display: block;
