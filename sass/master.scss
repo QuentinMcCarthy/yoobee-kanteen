@@ -175,7 +175,7 @@ noscript {
 #mainContainer {
 	background-color:invert($primaryColour);
 	width:100vw;
-	height:100vh;
+	height:88vh;
 }
 
 #mainImage {
@@ -318,6 +318,56 @@ noscript {
 }
 #contactDetails h2 {
 	margin-top:20px;
+}
+
+#socialMedia svg {
+	display:block;
+	float:left;
+}
+#socialMedia span {
+	display:block;
+	float:left;
+	padding:5px 0;
+}
+#socialMedia li::after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+#contactImages {
+	display:flex;
+	width:100vw;
+	height:20vh;
+	text-align:center;
+	margin:55px 0;
+}
+#contactImages div {
+	flex-basis:50%;
+}
+#contactImages div img {
+	height:100%;
+}
+
+#contactAddress {
+	display:flex;
+	position:absolute;
+	bottom:0;
+	width:100vw;
+	height:25vh;
+}
+
+#addressMap {
+	display:block;
+	order:2;
+	flex-basis:50%;
+	width:50%;
+}
+
+#addressBox {
+	order:1;
+	flex-basis:50%;
+	padding:40px;
 }
 
 // END CONTACT
