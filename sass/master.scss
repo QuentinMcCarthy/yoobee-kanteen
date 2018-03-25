@@ -70,6 +70,7 @@ noscript {
 	width:$slideLeftNavWidth;
 	background-color:$navColour;
 	transition:$slideLeftNavTrans;
+	z-index:2;
 }
 
 #navHeader {
@@ -166,6 +167,7 @@ noscript {
 	height:100vh;
 	background-color:black;
 	opacity:0.75;
+	z-index:2;
 }
 
 // END SLIDE NAVIGATION
@@ -305,8 +307,24 @@ noscript {
 	height:60px;
 }
 
+#breakfastMainNames {
+	flex-basis:61%;
+}
+
+#breakfastMainPrices {
+	flex-basis:39%;
+}
+
 #lunchMain li {
-	height:60px;
+	height:55px;
+}
+
+#lunchMainNames {
+	flex-basis:69%;
+}
+
+#lunchMainPrices {
+	flex-basis:31%;
 }
 
 // END MENU
@@ -323,6 +341,7 @@ noscript {
 #socialMedia svg {
 	display:block;
 	float:left;
+	margin-right:5px;
 }
 #socialMedia span {
 	display:block;
@@ -343,6 +362,7 @@ noscript {
 	margin:55px 0;
 }
 #contactImages div {
+	width:50%;
 	flex-basis:50%;
 }
 #contactImages div img {
@@ -468,7 +488,7 @@ noscript {
 	width:100%;
 	margin-bottom:25px;
 }
-.menuList div {
+.menuList > div {
 	display:flex;
 	width:80%;
 	margin:0 auto;
@@ -542,18 +562,15 @@ noscript {
 	margin-left:-5px;
 }
 
-.bfFirstItemKey {
-	position:absolute;
-	left:170px;
-	top:230px;
-	height:6vh;
+.itemText {
+	float:left;
+	width:75%;
 }
 
-.lFirstItemKey {
-	position:absolute;
-	left:170px;
-	top:215px;
+.itemKey {
+	float:left;
 	height:6vh;
+	width:25%;
 }
 
 // END MENU CONTENT
