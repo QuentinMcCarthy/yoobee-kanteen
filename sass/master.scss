@@ -98,21 +98,23 @@ noscript {
 	list-style:none;
 	width:100%;
 	flex-direction:column;
-}
-#navList li {
-	display:block;
-	text-align:center;
-	height:$navItemHeight;
-	line-height:$navItemHeight;
-	border-bottom:1px solid black;
-}
-#navList li a {
-	display:block;
-	width:100%;
-	height:100%;
-	color:$primaryColour;
-	text-decoration:none;
-	font-size:1.25em;
+
+	li {
+		display:block;
+		text-align:center;
+		height:$navItemHeight;
+		line-height:$navItemHeight;
+		border-bottom:1px solid black;
+
+		a {
+			display:block;
+			width:100%;
+			height:100%;
+			color:$primaryColour;
+			text-decoration:none;
+			font-size:1.25em;
+		}
+	}
 }
 
 #navSocial {
@@ -144,13 +146,14 @@ noscript {
 	bottom:0;
 	border-top:1px solid black;
 	transition:$slideLeftNavTrans;
-}
-#navMapBox .infoBox {
-	order:1;
-	width:50%;
-	padding:50px 25px 25px 25px;
-	font-size:1.1em;
-	text-align:center;
+
+	.infoBox {
+		order:1;
+		width:50%;
+		padding:5px 25px 25px 25px;
+		font-size:1.1em;
+		text-align:center;
+	}
 }
 
 #navMap {
@@ -333,9 +336,10 @@ noscript {
 
 #contactDetails {
 	margin:10px;
-}
-#contactDetails h2 {
-	margin-top:20px;
+
+	h2 {
+		margin-top:20px;
+	}
 }
 
 #socialMedia svg {
@@ -360,13 +364,15 @@ noscript {
 	height:20vh;
 	text-align:center;
 	margin:55px 0;
-}
-#contactImages div {
-	width:50%;
-	flex-basis:50%;
-}
-#contactImages div img {
-	height:100%;
+
+	div {
+		width:50%;
+		flex-basis:50%;
+
+		img {
+			height:100%;
+		}
+	}
 }
 
 #contactAddress {
@@ -485,19 +491,22 @@ noscript {
 	text-align:center;
 	width:100%;
 	margin-bottom:25px;
-}
-.menuList > div {
-	display:flex;
-	width:80%;
-	margin:0 auto;
-}
-.menuList div ul {
-	display:block;
-	list-style:none;
-	flex-basis:50%;
-}
-.menuList div ul li {
-	padding:3px 0;
+
+	> div {
+		display:flex;
+		width:80%;
+		margin:0 auto;
+
+		ul {
+			display:block;
+			list-style:none;
+			flex-basis:50%;
+
+			li {
+				padding:3px 0;
+			}
+		}
+	}
 }
 
 .itemNames {
@@ -506,9 +515,10 @@ noscript {
 
 .itemPrices {
 	text-align:right;
-}
-.itemPrices li::before {
-	content:"$";
+
+	li::before {
+		content:"$";
+	}
 }
 
 .menuKey {
@@ -517,47 +527,52 @@ noscript {
 	height:$menuKeyHeight;
 	padding:15px 10px;
 	align-content:center;
-}
-.menuKey div {
-	height:100%;
-}
-.menuKey img {
-	float:left;
-	height:100%;
-}
-.menuKey p {
-	float:left;
-	height:100%;
-	padding:12px 0;
-	font-size:0.7em;
+
+	div {
+		height:100%;
+	}
+	img {
+		float:left;
+		height:100%;
+	}
+	p {
+		float:left;
+		height:100%;
+		padding:12px 0;
+		font-size:0.7em;
+	}
 }
 
 .vegetarianKey {
 	flex-basis:27%;
-}
-.vegetarianKey p {
-	margin-left:-5px;
+
+	p {
+		margin-left:-5px;
+	}
 }
 
 .veganKey {
 	flex-basis:20%;
-}
-.veganKey p {
-	margin-left:-4px;
+
+	p {
+		margin-left:-4px;
+	}
 }
 
 .glutenFKey {
 	flex-basis:27%;
-}
-.glutenFKey p {
-	margin-left:-3px;
+
+	p {
+		margin-left:-3px;
+	}
 }
 
 .dairyFKey {
 	flex-basis:26%;
-}
-.dairyFKey p {
-	margin-left:-5px;
+
+	p {
+		margin-left:-5px;
+	}
 }
 
 .itemText {
@@ -593,9 +608,10 @@ noscript {
 @media only screen and (min-width:500px){
 	#findUs {
 		border-left:0;
-	}
-	#findUs .infoBox {
-		order:2;
+
+		.infoBox {
+			order:2;
+		}
 	}
 
 	#findUsMap {
@@ -605,14 +621,16 @@ noscript {
 
 	#ourMenus {
 		border-right:0;
-	}
-	#ourMenus .infoBox {
-		width:100%;
-	}
-	#ourMenus::after {
-		display:table;
-		content:"";
-		clear:both;
+
+		.infoBox {
+			width:100%;
+		}
+
+		::after {
+			display:table;
+			content:"";
+			clear:both;
+		}
 	}
 
 	#menusImageLink {
@@ -622,10 +640,11 @@ noscript {
 
 	#comeHereOften {
 		border-left:0;
-	}
-	#comeHereOften .infoBox {
-		order:2;
-		width:100%;
+
+		.infoBox {
+			order:2;
+			width:100%;
+		}
 	}
 
 	#choImageLink {
@@ -636,14 +655,16 @@ noscript {
 
 	#giveaway {
 		border-right:0;
-	}
-	#giveaway .infoBox {
-		width:100%;
-	}
-	#giveaway::after {
-		display:table;
-		content:"";
-		clear:both;
+
+		.infoBox {
+			width:100%;
+		}
+
+		::after {
+			display:table;
+			content:"";
+			clear:both;
+		}
 	}
 
 	#giveawayImageLink {
